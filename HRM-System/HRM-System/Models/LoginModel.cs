@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace HRM_System.Models
 {
@@ -8,17 +9,23 @@ namespace HRM_System.Models
         public string? Password { get; set; }
         public string? userRole { get; set; }
 
-        //public static List<LoginModel> Users =
-        //    new List<LoginModel>{
-        //        new LoginModel("mehedi", "123", "admin"),
-        //        new LoginModel("shimanto", "123", "software"),
-        //        new LoginModel("fahim", "123", "system") };
+        public static List<LoginModel> Users =
+            new List<LoginModel>{
+                new LoginModel("mehedi", "123", "admin"),
+                new LoginModel("shimanto", "123", "software"),
+                new LoginModel("fahim", "123", "system") };
+      
+        public LoginModel()
+        {
 
-        //LoginModel(string? userName, string? password, string userRole)
-        //{
-        //    UserName = userName;
-        //    Password = password;
-        //    this.userRole = userRole;
-        //}
+        }
+        private LoginModel(string? userName, string? password, string userRole)
+        {
+            UserName = userName;
+            Password = password;
+            this.userRole = userRole;
+        }
+
+
     }
 }

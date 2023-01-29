@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ebz7oJoQXx08BDaQmt/Ng7mt5nXkPpj+yTMxU2CpNU/n3MFWQ7DmDea/OSvP+F1Ybwqw1V5m4z0sk5QVCg8spw==",
+  "dgSpecHash": "rWfiCGdLOw1Tn1YtNXFXU4THP1hFRKVAQBhR/3u7CQmUKtbuVlUp6RzlojlakyNyF4TETsjDL6KX72WSnr4WYQ==",
   "success": true,
   "projectFilePath": "D:\\git file\\HRM-System\\HRM-System\\HRM-System\\HRM-System.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\SECL\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\SECL\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
     "C:\\Users\\SECL\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\SECL\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\SECL\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\SECL\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\SECL\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

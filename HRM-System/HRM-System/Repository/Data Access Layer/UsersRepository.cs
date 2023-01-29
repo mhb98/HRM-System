@@ -21,45 +21,34 @@ namespace HRM_System.Repository.Data_Access_Layer
 
         public String loginAsync([FromBody] LoginModel user)
         {
-            //var claim1= new List<Claim>();
-
-            //foreach(LoginModel individualUser in LoginModel.Users)
-            //{
-
-            //    if(individualUser.UserName.Equals(user.UserName) && individualUser.Password.Equals(user.Password))
-            //    {
-            //        claim1 = new List<Claim>
-            //    {
-            //        new Claim(ClaimTypes.Name, user.UserName),
-            //        new Claim(ClaimTypes.Role, user.userRole)
-
-            //    };
-            //    }
-
-            //}
-
-
             var tokenString = "";
 
-            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@345"));
-            var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
+            foreach (LoginModel individualUser in LoginModel.Users)
+            {                
 
-            var claims = new List<Claim>
+                if (individualUser.UserName.Equals(user.UserName) && individualUser.Password.Equals(user.Password))
+                {
+                   var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.UserName),
-                    new Claim(ClaimTypes.Role, user.userRole)
+                    new Claim(ClaimTypes.Role, individualUser.userRole)
 
                 };
-            var tokeOptions = new JwtSecurityToken(
-            issuer: "https://localhost:7142",
-            audience: "https://localhost:7142",
-            claims: claims,
-            expires: DateTime.Now.AddMinutes(5),
-            signingCredentials: signinCredentials
-            );
+                    var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@345"));
+                    var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
 
-            tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
 
+                    var tokeOptions = new JwtSecurityToken(
+                    issuer: "https://localhost:44347",
+                    audience: "https://localhost:44347",
+                    claims: claims,
+                    expires: DateTime.Now.AddMinutes(5),
+                    signingCredentials: signinCredentials
+                    );
+
+                    tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);                   
+                }
+            }
 
             return tokenString;
 

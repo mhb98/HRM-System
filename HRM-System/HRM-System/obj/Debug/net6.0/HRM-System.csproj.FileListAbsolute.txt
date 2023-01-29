@@ -32,3 +32,4 @@ D:\git file\HRM-System\HRM-System\HRM-System\obj\Debug\net6.0\refint\HRM-System.
 D:\git file\HRM-System\HRM-System\HRM-System\obj\Debug\net6.0\HRM-System.pdb
 D:\git file\HRM-System\HRM-System\HRM-System\obj\Debug\net6.0\HRM-System.genruntimeconfig.cache
 D:\git file\HRM-System\HRM-System\HRM-System\obj\Debug\net6.0\ref\HRM-System.dll
+D:\git file\HRM-System\HRM-System\HRM-System\bin\Debug\net6.0\Newtonsoft.Json.dll
