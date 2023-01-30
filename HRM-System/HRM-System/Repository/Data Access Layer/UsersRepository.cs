@@ -42,7 +42,7 @@ namespace HRM_System.Repository.Data_Access_Layer
                     issuer: "https://localhost:44347",
                     audience: "https://localhost:44347",
                     claims: claims,
-                    expires: DateTime.Now.AddMinutes(5),
+                    expires: DateTime.Now.AddMinutes(2),
                     signingCredentials: signinCredentials
                     );
 
